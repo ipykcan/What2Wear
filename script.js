@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 1d737ba (api change)
+const apiKey = "53cf92b73fb02d94ca60985477592309";
 const searchBtn = document.getElementById("searchBtn");
 const cityInput = document.getElementById("cityInput");
 
@@ -23,7 +20,9 @@ searchBtn.addEventListener("click", () => {
 
 async function getWeather(city) {
     try {
-        const response = await fetch(`/api/weather?city=${city}`);
+        const response = await fetch(
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
+);
 
         if (!response.ok) {
             throw new Error("City not found");
