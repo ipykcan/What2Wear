@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="data:,👕">
+    <title>What2Wear</title>
+</head>
+<body>
+   <section class="search">
+     <h1>What should I wear??</h1>
+    <div class="searchbox">
+        <div class="box">
+            <div class="text">Enter Location</div>
+            <input type="text" id="cityInput" placeholder="Location">
+            <button id="searchBtn">Search</button>
+        </div>
+    </div>
+   </section>
+
+
+   <section class="result">
+    <div class="r1">
+        <div class="heading">
+            <p>Weather</p>
+        </div>
+        <div class="line"></div>
+
+        <div class="info">
+            <div class="temp" id="temperature">42&degC</div>
+            <div class="weather" id="weatherName">Clear</div>
+            <div class="icon"><img id="weatherIcon" src="cloudy.png"></div>
+            <div class="city"  id="cityName" style="text-align: center;">Mumbai<br>Maharastra</div>
+        </div>
+
+    </div>
+    <div class="r2">
+        <div class="heading">
+            <p>Outfit</p>
+        </div>
+<div class="line"></div>
+<div class="info">
+    <div class="outfitimage"><img id="outfitImage" src="summer.jpg"></div>
+    <div class="des" id="outfitText" style="text-align: center;">soft and comfortable</div>
+</div>
+    </div>
+   </section>
+   <script src="script.js"></script>
+</body>
+</html>
